@@ -7,35 +7,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <script type="text/javascript" src="myscript.js"></script>
+        <link rel="apple-touch-icon" href="/custom_icon.png">
+        <meta name="apple-mobile-web-app-title" content="JM Calculator">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name = "viewport" content = "width = 320, initial-scale = 2.3, user-scalable = no">
     </head>
     <body>  
         <header>
         <h3>РАСЧЕТ СТОИМОСТИ</h3>
         </header> 
         <div class="top-container">
-            <p>длина волос: </p>
-            <select class="inputLine" id="hairLength">
-                <option value="length1">1-я длина</option>
-                <option value="length2">2-я длина</option>
-                <option value="length3">3-я длина</option>
-                <option value="length4">4-я длина</option>
-                <option value="length5">5-я длина</option>
-            </select>
+            <div>
+                <select class="input-line-one" id="hairLength">
+                    <option value="length1">1-я длина</option>
+                    <option value="length2">2-я длина</option>
+                    <option value="length3">3-я длина</option>
+                    <option value="length4">4-я длина</option>
+                    <option value="length5">5-я длина</option>
+                </select>
+            </div>
             <hr>
-            <p>краска:</p>
-            <input class="inputLine" type="text" id="hairDyeQuantity" value="" placeholder="количество краски(мл)">
+            <div class="block">
+                <label>краска:</label>
+                <input class="input-line-one" type="number" id="hairDyeQuantity" value="" placeholder="количество краски(мл)">
+            </div>
             <hr>
-            <p>оксидоз:</p>
-            <input class="inputLine" type="text" id="oxygenQuantity" value="" placeholder="количество оксидоза(мл)">
+            <div class="block">
+                <label>оксидоз:</label>
+                <input class="input-line-one" type="number" id="oxygenQuantity" value="" placeholder="количество оксидоза(мл)">
+            </div>
             <hr>
-            <p>порошок:</p>
-            <input class="inputLine" type="text" id="powderQuantity" value="" placeholder="количество порошка(г)">
+            <div class="block">
+                <label>порошок:</label>
+                <input class="input-line-one" type="number" id="powderQuantity" value="" placeholder="количество порошка(г)">
+            </div>
             <hr>
-            <p>фольга: </p>
-            <input class="inputLine" type="text" id="foilQuantity" value="" placeholder="количество фольги (м)">
+            <div class="block">
+                <label>фольга:</label>
+                <input class="input-line-one" type="number" id="foilQuantity" value="" placeholder="количество фольги (м)">
+            </div>
             <hr>
-            <p>полотенца: </p>
-            <input class="inputLine" type="text" id="towelQuantity" value="" placeholder="количество полотенец(шт)">
+            <div class="block">
+                <label>полотенца:</label>
+                <input class="input-line-one" type="number" id="towelQuantity" value="" placeholder="количество полотенец">
+            </div>
         </div>
         <div class="count-container">
             <div class="button-container">
