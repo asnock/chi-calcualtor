@@ -13,7 +13,7 @@
         <h3>РАСЧЕТ СТОИМОСТИ</h3>
         </header> 
         <div class="top-container">
-            <p>Длина волос: </p>
+            <p>длина волос: </p>
             <select class="inputLine" id="hairLength">
                 <option value="length1">1-я длина</option>
                 <option value="length2">2-я длина</option>
@@ -22,27 +22,29 @@
                 <option value="length5">5-я длина</option>
             </select>
             <hr>
-            <p>Длина волос: </p>
-            <input class="inputLine" type="text" id="hairDyeQuantity" value="" placeholder="количество краски">
+            <p>краска:</p>
+            <input class="inputLine" type="text" id="hairDyeQuantity" value="" placeholder="количество краски(мл)">
             <hr>
-            <p>Длина волос: </p>
-            <input class="inputLine" type="text" id="oxygenQuantity" value="" placeholder="количество оксидоза">
+            <p>оксидоз:</p>
+            <input class="inputLine" type="text" id="oxygenQuantity" value="" placeholder="количество оксидоза(мл)">
             <hr>
-            <p>Длина волос: </p>
-            <input class="inputLine" type="text" id="powderQuantity" value="" placeholder="количество порошка">
+            <p>порошок:</p>
+            <input class="inputLine" type="text" id="powderQuantity" value="" placeholder="количество порошка(г)">
             <hr>
-            <p>Длина волос: </p>
+            <p>фольга: </p>
             <input class="inputLine" type="text" id="foilQuantity" value="" placeholder="количество фольги (м)">
             <hr>
-            <p>Длина волос: </p>
-            <input class="inputLine" type="text" id="towelQuantity" value="" placeholder="количество полотенец">
+            <p>полотенца: </p>
+            <input class="inputLine" type="text" id="towelQuantity" value="" placeholder="количество полотенец(шт)">
         </div>
-        <div class="button-container">
-            <button class="myButton" onclick="calculatePrice();">Рассчитать стоимость</button>
-        </div>
-        <div class="price-container">
-            <div id="finalPrice"></div>
-            <div id="customerFinalPrice"></div>
+        <div class="count-container">
+            <div class="button-container">
+                <button class="myButton" onclick="calculatePrice();">Рассчитать стоимость</button>
+            </div>
+            <div class="price-container">
+                <div id="finalPrice"></div>
+                <div id="customerFinalPrice"></div>
+            </div>  
         </div>
         <footer></footer>
     </body>
