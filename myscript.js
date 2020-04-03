@@ -46,17 +46,11 @@ function calculatePrice() {
     towelQuantity = document.getElementById("towelQuantity").value;
     oxygenQuantity = document.getElementById("oxygenQuantity").value;
     powderQuantity = document.getElementById("powderQuantity").value;
-    if(foilQuantity == ""){
-        alert("Вы не указали количество фольги");
-    } else if(towelQuantity == ""){
-        alert("Вы не указали количество полотенец");
-    } else {
-        finalPrice = parseFloat (foilQuantity * foilPrice) + parseFloat (towelQuantity * towelPrice) + parseFloat (hairDyeQuantity * hairDyePrice) + 
-        parseFloat (oxygenQuantity * oxygenPrice) + parseFloat (powderQuantity + powderPrice) + price;
-        document.getElementById("finalPrice").innerHTML = "<p style='color:red; margin-left: 10px;'>Расчетная стоиомсть:</p>"+ "<p style='margin-left: 20px;'>" + finalPrice +" грн.</p>";
-        customerFinalPrice = parseFloat (foilQuantity * customerFoilPrice) + parseFloat (towelQuantity * towelPrice * 2) +
-         parseFloat (hairDyeQuantity * hairDyePrice * 2) + parseFloat (oxygenQuantity * oxygenPrice * 2) + 
-         parseFloat (powderQuantity + powderPrice * 2) + customerPrice ;
-        document.getElementById('customerFinalPrice').innerHTML = "<p style='color:red; margin-left: 10px;' >Стоимость для клиента:</p>"+ "<p style='margin-left: 20px;'>" + customerFinalPrice + " грн.</p>";
-    }
+    finalPrice = parseFloat (foilQuantity * foilPrice) + parseFloat (towelQuantity * towelPrice) + parseFloat (hairDyeQuantity * hairDyePrice) + 
+    parseFloat (oxygenQuantity * oxygenPrice) + parseFloat (powderQuantity + powderPrice) + price;
+    document.getElementById("finalPrice").innerHTML = "<p style='color:red; margin-left: 10px;'>Расчетная стоиомсть:</p>"+ "<p style='margin-left: 20px;'>" + finalPrice +" грн.</p>";
+    customerFinalPrice = parseFloat (foilQuantity * customerFoilPrice) + parseFloat (towelQuantity * towelPrice * 2) +
+    parseFloat (hairDyeQuantity * hairDyePrice * 2) + parseFloat (oxygenQuantity * oxygenPrice * 2) + 
+    parseFloat (powderQuantity + powderPrice * 2) + customerPrice ;
+    document.getElementById('customerFinalPrice').innerHTML = "<p style='color:red; margin-left: 10px;' >Стоимость для клиента:</p>"+ "<p style='margin-left: 20px;'>" + customerFinalPrice + " грн.</p>";
 }
