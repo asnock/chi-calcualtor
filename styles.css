@@ -97,3 +97,9 @@ label {
 	top:1px;
 }
 /** Button End **/
+
+@media screen and (max-width: 600px) {
+	label .input-line-one {
+		width: 100%;
+	}
+}
