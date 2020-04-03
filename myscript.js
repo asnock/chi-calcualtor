@@ -48,9 +48,11 @@ function calculatePrice() {
     powderQuantity = document.getElementById("powderQuantity").value;
     finalPrice = parseFloat (foilQuantity * foilPrice) + parseFloat (towelQuantity * towelPrice) + parseFloat (hairDyeQuantity * hairDyePrice) + 
     parseFloat (oxygenQuantity * oxygenPrice) + parseFloat (powderQuantity + powderPrice) + price;
-    document.getElementById("finalPrice").innerHTML = "<p style='color:red; margin-left: 10px;'>Расчетная стоиомсть:</p>"+ "<p style='margin-left: 20px;'>" + finalPrice +" грн.</p>";
+    var finalPriceBeautiful = finalPrice.toFixed(2);
+    document.getElementById("finalPrice").innerHTML = "<p style='color:red; margin-left: 10px;'> Моя стоимость :</p>"+ "<p style='margin-left: 20px; font-weight: bold;'>" + finalPriceBeautiful +" грн.</p>";
     customerFinalPrice = parseFloat (foilQuantity * customerFoilPrice) + parseFloat (towelQuantity * towelPrice * 2) +
     parseFloat (hairDyeQuantity * hairDyePrice * 2) + parseFloat (oxygenQuantity * oxygenPrice * 2) + 
     parseFloat (powderQuantity + powderPrice * 2) + customerPrice ;
-    document.getElementById('customerFinalPrice').innerHTML = "<p style='color:red; margin-left: 10px;' >Стоимость для клиента:</p>"+ "<p style='margin-left: 20px;'>" + customerFinalPrice + " грн.</p>";
+    var customerFinalPriceBeautiful = customerFinalPrice.toFixed(2);
+    document.getElementById('customerFinalPrice').innerHTML = "<p style='color:red; margin-left: 10px;' >Стоимость :</p>"+ "<p style='margin-left: 20px; font-weight: bold; height: 150px;'>" + customerFinalPriceBeautiful + " грн.</p>";
 }
