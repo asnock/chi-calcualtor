@@ -33,6 +33,10 @@ hr {
 	border-color: red;
 }
 
+.hr-last {
+	margin-top: 20px;
+}
+
 input[type='number'], textarea {
 	font-size: 16px;
 }
@@ -58,6 +62,13 @@ label {
 	outline: 0;
 	padding: 5px 35px 5px 5px;
 	margin: 10px 5px 5px 5px;
+}
+
+#hairLength {
+	padding-right: 250px;
+}
+select :focus {
+	front-size: 16px;
 }
 
 .top-container {
