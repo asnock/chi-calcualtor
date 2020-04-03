@@ -54,5 +54,5 @@ function calculatePrice() {
     parseFloat (hairDyeQuantity * hairDyePrice * 2) + parseFloat (oxygenQuantity * oxygenPrice * 2) + 
     parseFloat (powderQuantity + powderPrice * 2) + customerPrice ;
     var customerFinalPriceBeautiful = customerFinalPrice.toFixed(2);
-    document.getElementById('customerFinalPrice').innerHTML = "<p style='color:red; margin-left: 10px;' >Стоимость :</p>"+ "<p style='margin-left: 20px; font-weight: bold; height: 150px;'>" + customerFinalPriceBeautiful + " грн.</p>";
+    document.getElementById('customerFinalPrice').innerHTML = "<p style='color:red; margin-left: 10px;' >Стоимость :</p>"+ "<p style='margin-left: 20px; font-weight: bold; height: 170px;'>" + customerFinalPriceBeautiful + " грн.</p>";
 }
